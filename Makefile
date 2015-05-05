@@ -1,5 +1,6 @@
 CXXFLAGS=-Wall -O3 -g
-OBJECTS=$(SRCS:.cc=.o)
+SRC= $(wildcard *.cc)
+OBJECTS=$(SRC:.cc=.o)
 BINARIES=infodisplay
 
 RGB_INCDIR=matrix/include
