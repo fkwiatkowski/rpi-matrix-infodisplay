@@ -4,3 +4,6 @@
 [submodule "nrflib"]
 	path = nrflib
 	url = https://github.com/lolotan/nrflib
+[submodule "raster-fonts"]
+	path = raster-fonts
+	url = https://github.com/idispatch/raster-fonts

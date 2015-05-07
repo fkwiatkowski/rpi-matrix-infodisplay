@@ -1,0 +1,7 @@
+What i have to do next :
+
+Create the main page
+Radiobutton to select mode
+Allow rolling mode?
+Display the status of the screen on the webpage
+Display custom message?
