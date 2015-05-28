@@ -4,3 +4,6 @@
 [submodule "raster-fonts"]
 	path = raster-fonts
 	url = https://github.com/idispatch/raster-fonts
+[submodule "matrix"]
+	path = matrix
+	url = https://github.com/adafruit/rpi-rgb-led-matrix.git
