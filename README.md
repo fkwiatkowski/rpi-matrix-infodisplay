@@ -13,6 +13,7 @@ Many thanks for the code snippets taken from:  https://github.com/hzeller/rpi-rg
 
 Many thanks for the NRF lib written by my buddy lolotan:  https://github.com/lolotan/nrflib
 
+Add https://github.com/idispatch/raster-fonts <<< to be thanked
 
 ### License
 

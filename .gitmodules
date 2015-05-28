@@ -1,6 +1,3 @@
-[submodule "matrix"]
-	path = matrix
-	url = https://github.com/hzeller/rpi-rgb-led-matrix.git
 [submodule "nrflib"]
 	path = nrflib
 	url = https://github.com/lolotan/nrflib

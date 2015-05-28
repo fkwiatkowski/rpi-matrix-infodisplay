@@ -1,6 +1,6 @@
 CXXFLAGS=-Wall -O3 -g
 SRC= $(wildcard *.cc)
-OBJECTS=$(SRC:.cc=.o)
+CPPOBJECTS=$(SRC:.cc=.o)
 BINARIES=infodisplay
 
 RGB_INCDIR=matrix/include
@@ -16,8 +16,8 @@ LDFLAGS+=-L$(RGB_LIBDIR) -L$(NRF_LIBDIR) -l$(RGB_LIBRARY_NAME) -lrt -lm -lpthrea
 
 all : infodisplay
 
-infodisplay : $(OBJECTS) $(RGB_LIBRARY)
-	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $@ $(LDFLAGS)
+infodisplay : $(CPPOBJECTS) $(RGB_LIBRARY)
+	$(CXX) $(CXXFLAGS) $(CPPOBJECTS) -o $@ $(LDFLAGS)
 
 $(RGB_LIBRARY):
 	$(MAKE) -C $(RGB_LIBDIR)
@@ -29,6 +29,6 @@ $(NRF_LIBRARY):
 	$(CXX) -I$(RGB_INCDIR) -I$(NRF_INCDIR) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f $(OBJECTS) $(BINARIES)
+	rm -f $(CPPOBJECTS) $(BINARIES)
 	$(MAKE) -C $(RGB_LIBDIR) clean
 	$(MAKE) -C $(NRF_LIBDIR) clean
