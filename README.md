@@ -9,7 +9,7 @@ sudo apt-get install python-dev python-imaging
 
 ### Credits
 
-Many thanks for the code snippets taken from:  https://github.com/hzeller/rpi-rgb-led-matrix
+Many thanks for the code snippets taken from:  https://github.com/adafruit/rpi-rgb-led-matrix
 
 Many thanks for the NRF lib written by my buddy lolotan:  https://github.com/lolotan/nrflib
 
